@@ -1,2 +1,2 @@
-# Super-market
+# Sample website
 Buy goods
