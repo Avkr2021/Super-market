@@ -1,0 +1,128 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+.main-box {
+
+}
+
+.box1 {
+  grid-column: 1/4;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  position: relative;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  line-height: 40px;
+  padding: 20px 20px;
+}
+
+#menu li:hover {
+  background-color:lavenderblush;
+}
+
+#menu ul ul {
+  position: absolute;
+  display: none;
+}
+
+#menu ul ul li {
+  border: 1px solid #eee;
+  width: 200px;
+  background-color: white;
+}
+
+#menu ul ul a {
+  line-height: 10px;
+  display: block;
+}
+
+#menu ul li:hover> ul {
+  display: block;
+}
+
+.box2 {
+  background-image: url(football.jpg);
+  height: 400px;
+  width: 100%;
+  clear: both;
+  background-size: cover;
+}
+
+
+#img1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+#img2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+#img3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+#list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.head-box {
+  display:grid;
+  grid-template-columns: 20% 30% 50%;
+  grid-template-rows: (max-width: 1000px;);
+}
+
+.box3 {
+  border: 1px solid #eee;
+
+}
+
+.box3 img {
+      margin: 5px auto;
+      display: block;
+}
+
+.box4 {
+  border: 1px solid #eee;
+}
+
+#list {
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 20px
+}
+
+.box5 {
+  border: 1px solid #eee;
+}
+
+.box5 h1,p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.box6 {
+  background: rgba(0, 0, 0, 0.9);
+  margin-top: 20px;
+  padding: 10px 0px;
+}
