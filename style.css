@@ -145,3 +145,43 @@
 .para1 h2 {
   padding: 20px 0px;
 }
+
+.box3 {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.box3 h1 {
+  padding: 20px 0px;
+}
+
+.box4 {
+  display: flex;
+  margin: 30px 0px;
+  justify-content: center;
+}
+
+.b1 img {
+  height: 100px;
+  width: 100px;
+  margin: auto 10px;
+}
+
+.b1 {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.footer{
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  padding: 30px 20px;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+}
