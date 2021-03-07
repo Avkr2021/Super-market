@@ -219,4 +219,21 @@
       display: block;
       padding: 20px 5px;
     }
+
 }
+
+@media screen and (max-width:920px) {
+  .box5 {
+    flex: none;
+  }
+
+  .box5 .c1 {
+    width: 200px;
+    height: 500px;
+  }
+
+  .header-text{
+    font-size: 20px
+  }
+}
+
