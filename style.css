@@ -185,3 +185,38 @@
 .footer ul {
   list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+  .img1 img{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0px;
+  }
+
+    .box2{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    #menu {
+      display: none;
+
+    }
+
+    .header-text{
+      font-size: 20px
+    }
+
+    .header-text a {
+      padding: 10px 20px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .vv:after{
+      content: "Menu";
+      display: block;
+      padding: 20px 5px;
+    }
+}
