@@ -65,13 +65,14 @@
 
 .header-text a {
   background: tomato;
-  color: black;
+  color: white;
   line-height: 40px;
   padding: 20px 20px;
   text-decoration: none;
   display: inline-block;
   margin-top: 20px;
   border-radius: 50px;
+  outline: none;
 }
 
 .box1 {
@@ -112,12 +113,16 @@
   height: 50px;
   margin: 20px 0px;
   border-radius: 5px;
+  outline: none;
+}
+
+.email input:focus {
+  box-shadow: 0px 0px 1px 2px rgb(26, 115, 232);
 }
 
 .box2 {
   padding: 40px 30px;
   display: flex;
-  flex-basis: 49px;
 }
 
 
@@ -125,6 +130,7 @@
   width: 300px;
   height: 300px;
   margin: 0px 100px;
+  box-shadow: 5px 5px 15px 0px gray;
 }
 
 .img1 p {
@@ -179,11 +185,13 @@
   justify-content: space-around;
 }
 
+
 .box5 .c1 {
   width: 300px;
   height: 450px;
   border: 1px solid #eee;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px 1px #eee;
 }
 
 .cimg1 img {
@@ -200,6 +208,76 @@
   display: block;
   color: gray;
 }
+
+.form {
+  margin: 40px 0px;
+  padding: 0px 40px;
+}
+
+.form form {
+  width: 400px;
+  border: 1px solid #eee;
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 40px auto;
+  box-shadow: 2px 2px 10px 1px #eee;
+}
+
+.form .logo {
+  margin: 20px 0px;
+
+}
+
+.form img {
+  width: 100px;
+}
+
+.form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form input:focus {
+  box-shadow: 0px 0px 1px 3px rgb(26, 115, 232, 0.6);
+}
+
+.form .pass {
+  margin: 20px 0px;
+}
+
+.form .log {
+  margin: 20px 0px;
+}
+
+.form .log input{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: #1a73e8;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer{
@@ -249,6 +327,10 @@
       padding: 20px 5px;
     }
 
+    .form form{
+      width: 300px;
+    }
+
 }
 
 @media screen and (max-width:920px) {
@@ -265,4 +347,3 @@
     font-size: 20px
   }
 }
-
