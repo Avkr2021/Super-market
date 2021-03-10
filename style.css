@@ -294,6 +294,11 @@
 }
 
 @media screen and (max-width: 600px) {
+    .box5 .cimg1 {
+     Width: 350px;
+  }
+
+
   .img1 img{
     width: 100%;
     height: 300px;
