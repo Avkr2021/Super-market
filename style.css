@@ -263,7 +263,29 @@
 
 
 
+  #hat {
+  width: 130px;
+  height: 50px;
+  background: tomato;
+  margin: 100px auto;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #1a73e8;
+  cursor: pointer;
+}
 
+#hat b {
+  padding-top: 18px;
+  display: block;
+}
+
+.hat1 {
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 
 
