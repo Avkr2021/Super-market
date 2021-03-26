@@ -6,41 +6,28 @@
     <link rel="stylesheet" href="style.css">
     <script src="jquery.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   </head>
   <body>
-   <div class="vv">
-      <nav id="menu">
+      <header>
+      <div id="logo">
+        logo
+      </div>
+      <nav id="active" class="activea">
         <ul>
-          <li><a href="#">Home</a>
-            <ul>
-              <li><a href="#">Join us</a></li>
-              <li><a href="#">Investors</a></li>
-              <li><a href="#">Donate us</a></li>
-              <li><a href="#">Financials</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Product</a>
-            <ul>
-              <li><a href="#">Trees</a></li>
-              <li><a href="#">Pots</a></li>
-              <li><a href="#">Organic fertiliser</a></li>
-              <li><a href="#">Food</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Gallary</a>
-            <ul>
-              <li><a href="#">See Photo</a></li>
-              <li><a href="#">Make tour</a></li>
-              <li><a href="#">Organic fertiliser</a></li>
-            </ul>
-          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallary</a></li>
+          <li><a href="#">Product</a></li>
           <li><a href="#">Services</a></li>
-          <li id="login"><a href="form">Log in</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-    </div>
+      <div id="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
 
     <div id="top-header">
       <div class="header-text">
@@ -236,7 +223,13 @@
       document.getElementById("hat").style.color = "black";
       document.getElementById("hat").style.border = "#eee";
       document.getElementById("hat").style.boxShadow = "0px 0px 0px 2px rgba(26, 115, 232, 0.5)";
-      
+    }
+
+      document.getElementById("menu-toggle").addEventListener("click", mno);
+
+      function mno() {
+        document.getElementById("active").classList.toggle("activeb");
+      }
 </script>
 
 
