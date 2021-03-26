@@ -185,14 +185,14 @@
   justify-content: space-around;
 }
 
-
-.box5 .cimg1 {
+.c1 {
   width: 350px;
-  height: 450px;
+  height: 500px;
   border: 1px solid #eee;
   border-radius: 10px;
   box-shadow: 2px 2px 10px 1px #eee;
 }
+
 
 .cimg1 img {
   width: 100%;
@@ -396,24 +396,8 @@ header nav ul a:hover {
     .form form{
       width: 300px;
     }
-
-}
-
-@media screen and (max-width:920px) {
-  .box5 {
-    flex: none;
-  }
-
-  .box5 .c1 {
-    width: 200px;
-    height: 500px;
-  }
-
-  .header-text{
-    font-size: 20px
-  }
   
-    header {
+        header {
     padding: 0 20px;
   }
 
@@ -455,4 +439,22 @@ header nav ul a:hover {
   header nav ul a {
     border-bottom: 1px solid gray;
   }
+
+}
+
+@media screen and (max-width:920px) {
+  .box5 {
+    flex: none;
+  }
+
+  .box5 .c1 {
+    width: 200px;
+    height: 500px;
+  }
+
+  .header-text{
+    font-size: 20px
+  }
+  
+
 }
