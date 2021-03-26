@@ -215,7 +215,7 @@
 }
 
 .form form {
-  width: 400px;
+  width: 300px;
   border: 1px solid #eee;
   padding: 20px 20px;
   text-align: center;
@@ -353,9 +353,9 @@ header nav ul a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .box5 .cimg1 {
-     Width: 350px;
-     margin: 20px 0px;
+    .box5 .c1 {
+     Width: 300px;
+     margin: 10px 0px;
   }
 
 
