@@ -446,6 +446,14 @@ span {
   left: 400px;
 }
 
+button:focus {
+ Background:none;
+}
+
+a:focus {
+ Background:none;
+}
+
 @media screen and (max-width: 600px) {
     .box5 .c1 {
      Width: 300px;
