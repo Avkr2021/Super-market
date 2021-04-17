@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="check.css">
     <title>Check</title>
   </head>
   <body>
@@ -41,6 +41,7 @@
       </div>
     </header>
 
+
     <!-- header top image #FFCC66 -->
 
     <div class="header-top">
@@ -50,6 +51,9 @@
     </div>
 
     <div class="main-container">
+
+
+
       <div id="stand" class="stand-for">
         <h1>Get everything, you Want !</h1>
 
@@ -105,22 +109,26 @@
             <button id="register-btn" class="same-log" type="button" name="button">Register</button>
           </div>
           <form id="click-login" class="login-box" action="index.html" method="post">
-            <input type="text" name="" placeholder="Username">
-            <input type="password" name="" placeholder="Password">
-            <input class="loginbtn" type="submit" name="" value="Login">
+            <input type="text" name="" placeholder="Username" required>
+            <input id="getpassword" type="password" name="" placeholder="Password" required>
+            <div class="passcheck">
+              <input id="check" type="checkbox" name="" value=""><label class="showpass" for="">Show Password</label>
+            </div>
+            <input class="loginbtn" type="submit" name="" value="Login" >
           </form>
+
           <form id="click-register" class="login-box" action="index.html" method="post">
-            <input type="text" name="" placeholder="Username">
-            <input type="email" name="" placeholder="abc@gmail.com">
-            <input type="password" name="" placeholder="Password">
-            <input type="password" name="" placeholder="Confirm Password">
+            <input type="text" name="" placeholder="Username" required>
+            <input type="email" name="" placeholder="abc@gmail.com" required>
+            <input type="password" name="" placeholder="Password" required>
+            <input type="password" name="" placeholder="Confirm Password" required>
             <input class="loginbtn" type="submit" name="" value="Register">
           </form>
         </div>
       </div>
-      
-      
-            <!-- CARD -->
+
+
+      <!-- CARD -->
 
 
       <div class="main-card">
@@ -134,14 +142,17 @@
           </div>
         </div>
       </div>
-      
+
       <div class="response">
         <img src="bee.jpg" alt="">
       </div>
-      
-      
-      
+
+
     </div>
+
+
+
+
 
 
 
@@ -179,10 +190,11 @@
       document.getElementById("click-login").style.left = "-400px";
       document.getElementById("click-register").style.left = "20px";
     }
-      
+
+
 // read more
 
-    document.getElementById("readmore").addEventListener("click", readagain);
+    document.getElementById("readmore").addEventListener("change", readagain);
 
     function readagain() {
       document.getElementById("more").style.display = "block";
@@ -191,6 +203,20 @@
     }
 
 
-    </script>
+// show Password
+
+  document.getElementById("check").addEventListener("click", showpassword);
+
+  var getpass = document.getElementById("getpassword");
+
+  function showpassword() {
+    if (getpass.getAttribute("type") == "password") {
+      getpass.setAttribute("type", "text");
+    }else {
+      getpass.setAttribute("type", "password");
+    }
+  }
+
+  </script>
   </body>
 </html>
