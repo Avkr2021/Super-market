@@ -13,7 +13,6 @@ header {
   position: fixed;
   width: 100%;
   padding: 0px 100px;
-
 }
 
 .logo {
@@ -116,6 +115,7 @@ nav ul li:hover, .login a:hover {
   color: #ffff;
   font-size: 24px;
 }
+
 
 /* stant for */
 
@@ -318,6 +318,29 @@ display: flex;
   box-shadow: 0px 0px 0px 2.5px rgba(22, 111, 229, 0.5);
 }
 
+
+/* show password */
+
+.passcheck {
+  height: 50px;
+  }
+
+  #check {
+    width:18px;
+    margin-top: 0px;
+  }
+
+  #check:focus {
+    box-shadow: none;
+  }
+
+ .showpass {
+    position: relative;
+    bottom: 19px;
+    left: 10px
+  }
+
+
 /* card */
 
 .main-card {
@@ -342,7 +365,7 @@ display: flex;
 .image-card img {
   height: 80px;
   width: 80px;
-  border-radius: 50%;
+  border-radius: 50px;
   transform: translate(110px, 90px);
   border: 3px solid #ffff;
   margin: 0px;
@@ -368,7 +391,6 @@ display: flex;
   width: 100%;
   height: 100%;
 }
-
 
 
 @media screen and (max-width: 1300px) {
@@ -420,13 +442,19 @@ display: flex;
     position: relative;
     top: 450px;
   }
-  
+
   .main-card {
     margin-top: 500px;
   }
 }
 
 @media screen and (max-width: 400px) {
+
+  header {
+    background: #ffff;
+    border-bottom: 1px solid  #eee;
+  }
+
 
   #bar {
     display: block;
@@ -535,10 +563,11 @@ display: flex;
     position: relative;
     top: 950px;
   }
-  
+
   .main-card {
     margin-top: 1000px;
   }
 
 
 }
+
