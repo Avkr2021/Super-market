@@ -108,20 +108,32 @@
             <button id="login-btn" class="same-log" type="button" name="button">Login</button>
             <button id="register-btn" class="same-log" type="button" name="button">Register</button>
           </div>
-          <form id="click-login" class="login-box" action="index.html" method="post">
-            <input type="text" name="" placeholder="Username" required>
-            <input id="getpassword" type="password" name="" placeholder="Password" required>
+          <form id="click-login" class="login-box" action="#" method="">
+            <input id="usero" type="text" name="" placeholder="Username" >
+            <br>
+            <span id="usere"></span>
+            <input id="getpassword" type="password" name="" placeholder="Password" >
+            <br>
+            <span id="getpassworde"></span>
             <div class="passcheck">
               <input id="check" type="checkbox" name="" value=""><label class="showpass" for="">Show Password</label>
             </div>
             <input class="loginbtn" type="submit" name="" value="Login" >
           </form>
 
-          <form id="click-register" class="login-box" action="index.html" method="post">
-            <input type="text" name="" placeholder="Username" required>
-            <input type="email" name="" placeholder="abc@gmail.com" required>
-            <input type="password" name="" placeholder="Password" required>
-            <input type="password" name="" placeholder="Confirm Password" required>
+          <form id="click-register" class="login-box" action="#" method="">
+            <input id="user" type="text" name="" placeholder="Username">
+            <br>
+            <span id="usert"></span>
+            <input id="email" type="email" name="" placeholder="abc@gmail.com">
+            <br>
+            <span id="emailt"></span>
+            <input id="password" type="password" name="" placeholder="Password">
+            <br>
+            <span id="passwordt"></span>
+            <input id="conpass" type="password" name="" placeholder="Confirm Password">
+            <br>
+            <span id="conpasst"></span>
             <input class="loginbtn" type="submit" name="" value="Register">
           </form>
         </div>
@@ -162,14 +174,6 @@
 
     function toggle() {
       document.getElementById("menu").classList.toggle("movement-back");
-    }
-
-    // learn more
-
-    document.getElementById("more").addEventListener("click", more);
-
-    function more() {
-      document.getElementById("stand").style.maxWidth ="700px";
     }
 
 
@@ -216,6 +220,137 @@
       getpass.setAttribute("type", "password");
     }
   }
+
+  // form velidation
+
+  // login
+
+  document.getElementById("click-login").addEventListener("submit", runvelidation);
+
+  function runvelidation() {
+    var usero = document.getElementById("usero").value;
+    var getpassword = document.getElementById("getpassword").value;
+
+    if (usero == "") {
+      document.getElementById("usere").innerHTML = "Plese enter Username *";
+      return false;
+    }
+          if (usero.search(/[A-Z]/)== -1) {
+            document.getElementById("usere").innerHTML = "Must use atleast one Capital letter *";
+            return false;
+          }
+
+          if (usero.search(/[a-z]/)== -1) {
+            document.getElementById("usere").innerHTML = "Must use atleast one small letter *";
+            return false;
+          }
+
+          if (usero.search(/[!-/:-@_^]/)== -1) {
+            document.getElementById("usere").innerHTML = "Must use atleast one spaicel cherector *";
+            return false;
+          }
+
+          if (usero.search(/[0-9]/)== -1) {
+            document.getElementById("usere").innerHTML = "Must use atleast one Number *";
+            return false;
+          }
+
+          if (usero.length<8) {
+            document.getElementById("usere").innerHTML = "Your password must have morethan 8 cherector *";
+          }
+
+          else {
+            document.getElementById("usere").innerHTML = "";
+          }
+
+     if (getpassword == "") {
+       document.getElementById("getpassworde").innerHTML = "Please enter your Password *";
+     }
+          else {
+            document.getElementById("getpassworde").innerHTML = "";
+          }
+  }
+
+  // register
+
+
+  document.getElementById("click-register").addEventListener("submit", runregister);
+
+  function runregister() {
+
+    var user = document.getElementById("user").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var conpass = document.getElementById("conpass").value;
+
+
+
+    if (user == "") {
+      document.getElementById("usert").innerHTML = "Plese enter Username *";
+      return false;
+    }
+          if (user.search(/[A-Z]/)== -1) {
+            document.getElementById("usert").innerHTML = "Must use atleast one Capital letter *";
+            return false;
+          }
+
+          if (user.search(/[a-z]/)== -1) {
+            document.getElementById("usert").innerHTML = "Must use atleast one small letter *";
+            return false;
+          }
+
+          if (user.search(/[!-/:-@_^]/)== -1) {
+            document.getElementById("usert").innerHTML = "Must use atleast one spaicel cherector *";
+            return false;
+          }
+
+          if (user.search(/[0-9]/)== -1) {
+            document.getElementById("usert").innerHTML = "Must use atleast one Number *";
+            return false;
+          }
+
+          if (user.length<8) {
+            document.getElementById("usert").innerHTML = "Your password must have morethan 8 cherector *";
+          }
+
+          else {
+            document.getElementById("usert").innerHTML = "";
+          }
+
+      if (email == "") {
+        document.getElementById("emailt").innerHTML = "Plese enter your E-mail *";
+      }
+          else {
+            document.getElementById("emailt").innerHTML = "";
+          }
+
+      if (password == "") {
+        document.getElementById("passwordt").innerHTML = "Please enter your Password *";
+        return false;
+      }
+
+          if (password.length<8) {
+            document.getElementById("passwordt").innerHTML = "Your password length must be morethen 8 cherector *";
+          }
+
+          else {
+            document.getElementById("passwordt").innerHTML = "";
+          }
+
+      if (conpass == "") {
+        document.getElementById("conpasst").innerHTML = "Please Confirm your Password *";
+        return false;
+      }
+
+          if (conpass != password) {
+            document.getElementById("conpasst").innerHTML = "Your Password not Matched *";
+          }
+
+          else {
+            document.getElementById("conpasst").innerHTML = "";
+          }
+  }
+
 
   </script>
   </body>
