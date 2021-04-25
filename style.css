@@ -7,13 +7,14 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 header {
   position: fixed;
   width: 100%;
   padding: 0px 100px;
-  Z-index: 10;
+  z-index: 10;
 }
 
 .logo {
@@ -24,6 +25,7 @@ header {
 
 .oo {
   color: #FF0000;
+  font-size: 32px;
 }
 
 nav {
@@ -311,11 +313,17 @@ display: flex;
   border-right: 0px;
   margin: 15px 0px;
   outline: none;
+  border-radius: 8px;
   padding: 10px;
 }
 
 .login-box input:focus {
   box-shadow: 0px 0px 0px 2.5px rgba(22, 111, 229, 0.5);
+}
+
+span {
+  color: red;
+  font-size: 12px;
 }
 
 
@@ -367,7 +375,7 @@ display: flex;
   width: 80px;
   border-radius: 50px;
   transform: translate(110px, 90px);
-  border: 3px solid #ffff;
+  box-shadow: 0px 0px 0px 3px #ffff;
   margin: 0px;
   padding: 0px;
 }
@@ -504,7 +512,7 @@ display: flex;
     height: 30px;
     line-height: 30px;
     padding: 0px 10px;
-    background: rgba(0, 165, 244, 0.8);
+    background: #166fe5;
     margin: auto;
     text-decoration: none;
     border-radius: 5px;
@@ -545,6 +553,10 @@ display: flex;
     border-radius: 8px 0px 0px 8px;
   }
 
+  .sub-clints {
+    margin: 20px 0px;
+  }
+
   .submit {
     height: 40px;
     width: 50px;
@@ -561,13 +573,13 @@ display: flex;
 
   .main-register-container {
     position: relative;
-    top: 950px;
+    top: 1050px;
+    margin: 20px 0px;
   }
 
   .main-card {
-    margin-top: 1000px;
+    margin-top: 1100px;
   }
 
 
 }
-
