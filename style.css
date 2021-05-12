@@ -34,6 +34,15 @@ header {
   display: none;
 }
 
+.bar-btn p {
+  cursor: pointer;
+  font-size: 21px;
+}
+
+.bar-btn p:active {
+  color: #1a73e8;
+}
+
 nav {
   float: right;
 }
@@ -127,6 +136,10 @@ nav ul a:hover {
   border-radius: 8px;
 }
 
+.invest a:active {
+  box-shadow: 0px 0px 0px 1px #1a73e8;
+}
+
 
 
 #mission {
@@ -149,7 +162,7 @@ nav ul a:hover {
 
 .mission-inner p {
   font-size: 20px;
-  color: #666666;
+  color: #727272;
 }
 
 #Aboutus {
@@ -166,12 +179,12 @@ nav ul a:hover {
 }
 
 #Aboutus p {
-  color: #666666;
+  color: #727272;
   font-size: 20px;
 }
 
 #footer {
-  background: rgb(76, 209, 55);
+  background: rgba(68, 189, 50, 0.9);
   color: #515151;
   padding: 35px 20px;
 }
@@ -181,9 +194,19 @@ nav ul a:hover {
 }
 
 .write-to input {
-  border: 2px solid #eee;
   padding: 5px;
   border-radius: 8px;
+  border: 0px;
+}
+
+.write-to input:focus {
+  border: 3px solid #1a73e8;
+  outline: none;
+}
+
+.write-to textarea:focus {
+  border: 3px solid #1a73e8;
+  outline: none;
 }
 
 .mail {
@@ -194,10 +217,12 @@ nav ul a:hover {
 }
 
 .text {
-  height: 40px;
   margin: 10px 0px;
   display: block;
   font-size: 18px;
+  padding: 5px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .write-to button {
@@ -209,7 +234,7 @@ nav ul a:hover {
 }
 
 .write-to button:active {
-  box-shadow: 0px 0px 0px 1px rgba(26, 115, 232, 0.5);
+  box-shadow: 0px 0px 0px 1px #1a73e8;
 }
 
 .social-link {
@@ -289,7 +314,6 @@ nav ul a:hover {
 
   .bar-btn {
     display: block;
-    cursor: pointer;
   }
 
   nav {
@@ -353,10 +377,17 @@ nav ul a:hover {
   }
 
   #Aboutus p {
-    color: #666666;
-    font-size: 20px;
+    font-size: 18px;
   }
 
+}
 
+@media screen and (max-width:450px) {
+  .invest img {
+    width: 150px;
+  }
 
+  .invest p {
+    font-size: 28px;
+  }
 }
