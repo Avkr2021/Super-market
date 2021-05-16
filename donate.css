@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+p {
+  color: #5b5b5b;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.donar {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.AccountNo {
+  height: 500px;
+  width: 700px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px 3px #eee;
+}
+
+.donr1 {
+  margin-top: 15px;
+
+}
+
+.hdfc {
+  width: 150px;
+}
+
+table {
+  font-size: 30px;
+}
+
+table td {
+  padding: 10px;
+}
+
+
+.accountQr {
+  height: 500px;
+  width: 700px;
+  border: 1px solid #eee;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px 3px #eee;
+}
+
+.accountQr img {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width:1475px) {
+  .accountQr {
+    width: 600px;
+  }
+
+  .AccountNo {
+    width: 600px;
+    padding: 20px 30px;
+  }
+
+  .accountQr img {
+    width: 45%;
+  }
+
+  table {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:1275px) {
+  .accountQr {
+    width: 500px;
+  }
+
+  .AccountNo {
+    width: 500px;
+  }
+
+  .accountQr img {
+    width: 55%;
+  }
+
+  p{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .accountQr {
+    width: 400px;
+  }
+
+  .AccountNo {
+    width: 400px;
+  }
+
+  .accountQr img {
+    width: 65%;
+  }
+
+  table {
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .accountQr {
+    width: 300px;
+    height: 400px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 400px;
+    padding: 15px 20px;
+  }
+
+  .accountQr img {
+    width: 69%;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width:670px) {
+  .accountQr {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+  }
+
+  .accountQr img {
+    width: 60%;
+  }
+
+  table {
+    font-size: 17px;
+  }
+
+  table td {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .accountQr {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 300px;
+    padding: 5px 20px;
+    margin-bottom: 40px;
+  }
+
+  .accountQr img {
+    width: 60%;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  table td {
+    padding: 5px;
+  }
+}
