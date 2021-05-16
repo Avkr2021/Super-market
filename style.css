@@ -62,8 +62,8 @@ nav ul a {
 }
 
 nav ul a:hover {
-  background: rgba(68, 189, 50, 0.9);
-  color: #ffff;
+  background: rgba(13, 139, 242, 0.2);
+  color: rgb(13, 139, 242);
   border-radius: 5px;
 }
 
