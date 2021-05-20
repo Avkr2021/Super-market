@@ -139,6 +139,103 @@ nav ul a:hover {
   box-shadow: 0px 0px 0px 1px #1a73e8;
 }
 
+.earth-surface {
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 400px;
+  display: flex;
+}
+
+.image img {
+  width: 100%;
+  margin: auto;
+}
+
+.earth-surface-para {
+  display: flex;
+}
+
+.earth-surface p {
+  font-weight: bold;
+  font-size: 40px;
+  color: #727272;
+  margin: auto;
+}
+
+.trees-cut {
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.trees-cut img {
+  width: 300px;
+  float: right;
+}
+
+.trees-cut p {
+  font-size: 40px;
+  color: #727272;
+}
+
+.globalwarming {
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.globalwarming> h1 {
+  font-size: 50px;
+  color: #727272;
+}
+
+.main-globe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-globe> div {
+  border: 2px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 250px;
+}
+
+.main-globe div p {
+  font-size: 20px;
+  color: #727272;
+  padding-bottom: 20px;
+}
+
+
+
+.lifeotr, .airotr, .iceotr, .warmotr, .fireotr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.life, .air, .ice, .warm, .fire {
+  width: 90%;
+}
+
+.life img, .air img, .ice img, .warm img, .fire img {
+  width: 100%;
+}
+
 
 
 #mission {
@@ -171,10 +268,16 @@ nav ul a:hover {
   border-radius: 10px;
 }
 
+#Aboutus img {
+  float: left;
+  width: 100%;
+}
+
 #Aboutus h1 {
   font-size: 40px;
   color: rgba(68, 189, 50, 0.9);
   margin-bottom: 20px;
+  clear: both;
 }
 
 #Aboutus p {
@@ -262,9 +365,20 @@ nav ul a:hover {
 
 
 
+@media screen and (max-width:1400px) {
+  .main-globe> div {
+    width: 210px;
+    height: 210px;
+  }
 
+  .life, .air, .ice, .warm, .fire {
+    width: 75%;
+  }
 
-
+  .globalwarming> h1 {
+    font-size: 40px;
+  }
+}
 
 @media screen and (max-width:1200px) {
   .head-para b {
@@ -277,6 +391,11 @@ nav ul a:hover {
     font-size: 35px;
   }
 
+  .main-globe> div {
+    width: 250px;
+    height: 250px;
+  }
+
   .invest h1 {
     font-size: 35px;
     margin: 20px 0px;
@@ -287,6 +406,19 @@ nav ul a:hover {
   }
 
   .invest p {
+    font-size: 35px;
+  }
+
+  .earth-surface {
+    justify-content: center;
+
+  }
+
+  .trees-cut img {
+    width: 300px;
+  }
+
+  .trees-cut p {
     font-size: 35px;
   }
 
@@ -305,6 +437,21 @@ nav ul a:hover {
 
 @media screen and (max-width:750px) {
   .head-para b {
+    font-size: 30px;
+  }
+
+  .trees-cut {
+    align-items: center;
+    flex-direction: column-reverse;
+
+  }
+
+  .trees-cut img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .trees-cut p {
     font-size: 30px;
   }
 }
@@ -343,7 +490,7 @@ nav ul a:hover {
 
   .invest h1 {
     font-size: 35px;
-    margin: 10px 0px
+    margin: 10px 0px;
   }
 
   .invest img {
@@ -356,6 +503,17 @@ nav ul a:hover {
 
   .invest a {
     padding: 16px 30px;
+  }
+
+  .main-globe> div {
+    border: 1px solid #eee;
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 1px 15px 5px #eee;
+  }
+
+  .life, .air, .ice, .warm, .fire {
+    width: 80%;
   }
 
   #mission {
