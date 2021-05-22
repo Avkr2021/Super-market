@@ -160,6 +160,17 @@ nav ul a:hover {
 
 .earth-surface-para {
   display: flex;
+  flex-direction: column;
+}
+
+.earth-surface-para a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.earth-surface-para span {
+  font-size: 12px;
 }
 
 .earth-surface p {
@@ -185,6 +196,17 @@ nav ul a:hover {
 .trees-cut p {
   font-size: 40px;
   color: #727272;
+}
+
+.trees-cut a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.trees-cut span {
+  font-size: 12px;
+  display: block;
 }
 
 .globalwarming {
@@ -454,16 +476,49 @@ nav ul a:hover {
   .trees-cut p {
     font-size: 30px;
   }
+
+  .invest p {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width:650px) {
+
+  header {
+    padding: 0px 10px;
+  }
 
   .bar-btn {
     display: block;
   }
 
+  .topdown {
+    right: 0px;
+  }
+
   nav {
-    display: none;
+    position: absolute;
+    top: 50px;
+    right: -700px;
+    height: 100vh;
+    transition: 1s;
+  }
+
+  nav ul {
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #999999;
+  }
+
+  nav ul a {
+    color: #444444;
   }
 
   .main-head {
@@ -495,10 +550,6 @@ nav ul a:hover {
 
   .invest img {
     width: 250px;
-  }
-
-  .invest p {
-    font-size: 35px;
   }
 
   .invest a {
