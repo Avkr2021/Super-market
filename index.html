@@ -14,7 +14,7 @@
         <p>|||</p>
       </div>
 
-      <nav id="menu">
+      <nav id="menu" >
         <ul>
           <li><a href="#pay">Donate</a></li>
           <li><a href="#mission">Mission</a></li>
@@ -55,13 +55,19 @@
           <img  src="piechart.png" alt="">
         </div>
         <div class="earth-surface-para">
-          <p>Only 30% Forest area left on Earthsurface</p>
+          <p>Only 30% Forest area left on Earthsurface</p><br>
+          <span>Source : <a href=""> FAO</a> </span>
         </div>
       </div>
 
       <div class="trees-cut">
-        <p>15 Million to 18 Million Hectares of forest, an area the size of Belgium, are Destroyed every year, means around 2400 Trees are cut down each minute on earth.</p>
+
+        <p>Approximately 10 Million to 15 Million Hectares of forest, an area the size of Belgium, are Destroyed every year, means around 2400 Trees are cut down each minute on earth.
+          <br>
+          <br>
+        <span>Source : <a href=""> FAO</a> </span></p>
         <img src="forestcut.png" alt="">
+
       </div>
 
       <div class="globalwarming">
@@ -173,5 +179,25 @@
       </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      document.getElementById("bar").addEventListener("click", menu);
+
+      function menu() {
+        document.getElementById("menu").classList.toggle("topdown");
+      }
+    </script>
+
   </body>
 </html>
