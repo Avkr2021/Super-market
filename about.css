@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+#Aboutus {
+  margin-bottom: 30px;
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#Aboutus img {
+  float: left;
+  width: 100%;
+}
+
+#Aboutus h1 {
+  font-size: 40px;
+  color: rgba(68, 189, 50, 0.9);
+  margin-bottom: 20px;
+  clear: both;
+}
+
+#Aboutus p {
+  color: #727272;
+  font-size: 20px;
+}
