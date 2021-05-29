@@ -259,55 +259,6 @@ nav ul a:hover {
   width: 100%;
 }
 
-
-
-#mission {
-  border: 2px solid #eee;
-  padding: 30px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-#mission h1 {
-  font-size: 40px;
-  color: rgba(68, 189, 50, 0.9);
-}
-
-#mission img {
-  width: 40%;
-  height: 100%;
-  margin: 10px 0px;
-}
-
-.mission-inner p {
-  font-size: 20px;
-  color: #727272;
-}
-
-#Aboutus {
-  margin-bottom: 30px;
-  border: 2px solid #eee;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-#Aboutus img {
-  float: left;
-  width: 100%;
-}
-
-#Aboutus h1 {
-  font-size: 40px;
-  color: rgba(68, 189, 50, 0.9);
-  margin-bottom: 20px;
-  clear: both;
-}
-
-#Aboutus p {
-  color: #727272;
-  font-size: 20px;
-}
-
 #footer {
   background: rgba(68, 189, 50, 0.9);
   color: #515151;
@@ -445,14 +396,6 @@ nav ul a:hover {
     font-size: 35px;
   }
 
-  #mission h1 {
-    font-size: 35px;
-  }
-
-  #Aboutus h1 {
-    font-size: 35px;
-  }
-
   header {
     padding: 0px 20px;
   }
@@ -574,29 +517,6 @@ nav ul a:hover {
   .life, .air, .ice, .warm, .fire {
     width: 80%;
   }
-
-  #mission {
-    padding: 20px;
-  }
-
-  #mission h1 {
-    font-size: 35px;
-  }
-
-  #Aboutus {
-    padding: 15px;
-  }
-
-  #Aboutus h1 {
-    font-size: 35px;
-    margin-bottom: 5px;
-  }
-
-  #Aboutus p {
-    font-size: 18px;
-  }
-
-}
 
 @media screen and (max-width:450px) {
 
