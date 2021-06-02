@@ -1,0 +1,746 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-head {
+  width: 100%;
+  padding: 30px 10px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-para {
+  height: 60%;
+  width: 50%;
+  padding: 20px;
+}
+
+.head-para b {
+  font-size: 50px;
+  color: #999999;
+}
+
+.photo1 {
+  height: 60%;
+  width: 50%;
+}
+
+
+.photo1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+    padding: 0px 20px;
+}
+
+.invest {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.invest h1 {
+  font-size: 40px;
+  color: rgba(68, 189, 50, 0.9);
+  margin: 20px 0px;
+}
+
+.invest img {
+  width: 300px;
+  float: right;
+}
+
+.invest p {
+  font-size: 30px;
+  color: #999999;
+}
+
+.invest a {
+  color: #ffff;
+  text-decoration: none;
+  padding: 18px 30px;
+  display: inline-block;
+  background: #1a73e8;
+  margin: 20px 0px;
+  border-radius: 8px;
+}
+
+.invest a:active {
+  box-shadow: 0px 0px 0px 1px #1a73e8;
+}
+
+.invest a:hover {
+  background: #2b9cf2;
+}
+
+.earth-surface {
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 400px;
+  display: flex;
+}
+
+.image img {
+  width: 100%;
+  margin: auto;
+}
+
+.earth-surface-para {
+  display: flex;
+  flex-direction: column;
+}
+
+.earth-surface-para a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.earth-surface-para span {
+  font-size: 12px;
+}
+
+.earth-surface p {
+  font-weight: bold;
+  font-size: 40px;
+  color: #727272;
+  margin: auto;
+}
+
+.trees-cut {
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.trees-cut img {
+  width: 300px;
+  float: right;
+}
+
+.trees-cut p {
+  font-size: 40px;
+  color: #727272;
+}
+
+.trees-cut a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.trees-cut span {
+  font-size: 12px;
+  display: block;
+}
+
+.globalwarming {
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.globalwarming> h1 {
+  font-size: 50px;
+  color: #727272;
+}
+
+.main-globe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-globe> div {
+  border: 2px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 250px;
+}
+
+.main-globe div p {
+  font-size: 20px;
+  color: #727272;
+  padding-bottom: 20px;
+}
+
+
+
+.lifeotr, .airotr, .iceotr, .warmotr, .fireotr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.life, .air, .ice, .warm, .fire {
+  width: 90%;
+}
+
+.life img, .air img, .ice img, .warm img, .fire img {
+  width: 100%;
+}
+
+#footer {
+  background: rgba(68, 189, 50, 0.9);
+  color: #515151;
+  padding: 35px 20px;
+}
+
+.write-to {
+  margin: 20px 0px;
+}
+
+.write-to input {
+  padding: 5px;
+  border-radius: 8px;
+  border: 0px;
+}
+
+.write-to input:focus {
+  border: 2px solid #1a73e8;
+  outline: none;
+}
+
+.write-to textarea:focus {
+  border: 2px solid #1a73e8;
+  outline: none;
+}
+
+.mail {
+  height: 40px;
+  margin: 10px 0px;
+  display: block;
+  font-size: 18px;
+}
+
+.text {
+  margin: 10px 0px;
+  display: block;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.write-to button {
+  padding: 10px 20px;
+  border: 0px;
+  background: #1a73e8;
+  color: #ffff;
+  border-radius: 5px;
+}
+
+.write-to button:active {
+  box-shadow: 0px 0px 0px 1px #1a73e8;
+}
+
+.social-link {
+  text-align: center;
+}
+
+.social-link a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-link img {
+  width: 50px;
+  margin: 0px 10px;
+}
+
+/* ----------------------Aboutus-------- */
+
+#Aboutus {
+  margin-bottom: 30px;
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+}
+
+#Aboutus img {
+  float: left;
+  width: 40%;
+}
+
+#Aboutus h1 {
+  font-size: 40px;
+  color: rgba(68, 189, 50, 0.9);
+  margin-bottom: 20px;
+  clear: both;
+}
+
+#Aboutus p {
+  color: #727272;
+  font-size: 20px;
+}
+
+/* --------------------contactus---------- */
+
+
+/* ------------------donate------------------ */
+
+.donte {
+  position: relative;
+  top: 50px;
+}
+
+.donate_header {
+  color: #5b5b5b;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.donar {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.AccountNo {
+  height: 500px;
+  width: 700px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px 3px #eee;
+}
+
+.donr1 {
+  margin-top: 15px;
+
+}
+
+.hdfc {
+  width: 150px;
+}
+
+table {
+  font-size: 30px;
+}
+
+table td {
+  padding: 10px;
+}
+
+
+.accountQr {
+  height: 500px;
+  width: 700px;
+  border: 1px solid #eee;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px 3px #eee;
+}
+
+.accountQr img {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+
+/* ---------------mission----------- */
+
+#mission {
+  position: relative;
+  top: 80px;
+  padding: 0px 20px;
+}
+
+#mission h1 {
+  font-size: 40px;
+  color: rgba(68, 189, 50, 0.9);
+}
+
+.treetwo {
+  height: 40%;
+  width: 40%;
+  background-color: #b8dbb9;
+}
+
+.treetwo img {
+  width: 100%;
+}
+
+.mission_inner {
+  margin-top: 30px;
+}
+
+.mission_inner p{
+  font-size: 20px;
+  color: #727272;
+}
+
+
+@media screen and (max-width:1400px) {
+  .main-globe> div {
+    width: 210px;
+    height: 210px;
+  }
+
+  .life, .air, .ice, .warm, .fire {
+    width: 75%;
+  }
+
+  .globalwarming> h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:1475px) {
+  .accountQr {
+    width: 600px;
+  }
+
+  .AccountNo {
+    width: 600px;
+    padding: 20px 30px;
+  }
+
+  .accountQr img {
+    width: 45%;
+  }
+
+  table {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:1275px) {
+  .accountQr {
+    width: 500px;
+  }
+
+  .AccountNo {
+    width: 500px;
+  }
+
+  .accountQr img {
+    width: 55%;
+  }
+
+  p{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .head-para b {
+    font-size: 43px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .accountQr {
+    width: 400px;
+  }
+
+  .AccountNo {
+    width: 400px;
+  }
+
+  .accountQr img {
+    width: 65%;
+  }
+
+  table {
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .head-para b {
+    font-size: 35px;
+  }
+
+  .main-globe> div {
+    width: 250px;
+    height: 250px;
+  }
+
+  .invest h1 {
+    font-size: 35px;
+    margin: 20px 0px;
+  }
+
+  .invest img {
+    width: 250px;
+  }
+
+  .invest p {
+    font-size: 30px;
+  }
+
+  .earth-surface {
+    justify-content: center;
+
+  }
+
+  .trees-cut img {
+    width: 300px;
+  }
+
+  .trees-cut p {
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+  .accountQr {
+    width: 300px;
+    height: 400px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 400px;
+    padding: 15px 20px;
+  }
+
+  .accountQr img {
+    width: 69%;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width:750px) {
+  .head-para b {
+    font-size: 30px;
+  }
+
+  .trees-cut {
+    align-items: center;
+    flex-direction: column-reverse;
+
+  }
+
+  .trees-cut img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .trees-cut p {
+    font-size: 28px;
+  }
+
+  .invest p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .accountQr {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+  }
+
+  .accountQr img {
+    width: 60%;
+  }
+
+  table {
+    font-size: 17px;
+  }
+
+  table td {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width:650px) {
+
+  .main-head {
+    display: block;
+  }
+
+  .head-para {
+    width: 100%;
+  }
+
+  .head-para b {
+    font-size: 30px;
+  }
+
+  .photo1 {
+    height: 50%;
+    width: 100%;
+  }
+
+  .invest {
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  .invest h1 {
+    font-size: 35px;
+    margin: 10px 0px;
+  }
+
+  .invest img {
+    width: 250px;
+  }
+
+  .invest a {
+    padding: 16px 30px;
+  }
+
+  .invest p {
+    font-size: 27px;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .main-globe> div {
+    border: 1px solid #eee;
+    width: 300px;
+    box-shadow: 1px 1px 15px 5px #eee;
+  }
+
+  .life, .air, .ice, .warm, .fire {
+    width: 80%;
+  }
+
+@media screen and (max-width:450px) {
+
+  .globalwarming {
+    padding: 23px 10px;
+  }
+
+  .main-globe> div {
+    width: 150px;
+    height: 160px;
+  }
+
+  .main-globe div p {
+    font-size: 15px;
+  }
+
+  .life, .air, .ice, .warm, .fire {
+    width: 80%;
+  }
+
+  .invest img {
+    width: 150px;
+  }
+
+  .invest p {
+    font-size: 25px;
+  }
+
+  .invest a {
+    padding: 15px 27px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .accountQr {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 300px;
+    padding: 5px 20px;
+    margin-bottom: 40px;
+  }
+
+  .accountQr img {
+    width: 60%;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  table td {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .head h1 {
+    font-size: 19px;
+  }
+
+  .main-con {
+    top: 60px;
+    padding: 9px;
+  }
+
+  .Office, .communicate {
+    padding: 5px;
+    margin: 15px 0px;
+    font-size: 12px;
+  }
+
+  .Office h2, .communicate h2 {
+    font-size: 18px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    padding: 10px 0px;
+    font-size: 12px;
+  }
+}
