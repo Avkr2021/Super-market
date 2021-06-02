@@ -9,65 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  width: 100%;
-  padding: 0px 30px;
-  z-index: 99;
-  border-bottom: 2px solid #eee;
-  position: fixed;
-  background: #ffff;
-  box-sizing: border-box;
-}
-
-#logo {
-  height: 50px;
-  line-height: 50px;
-  float: left;
-}
-
-.bar-btn {
-  float: right;
-  transform: rotate(90deg);
-  height: 50px;
-  width: 50px;
-  display: flex;
-  text-align: center;
-  display: none;
-}
-
-.bar-btn p {
-  cursor: pointer;
-  font-size: 21px;
-}
-
-.bar-btn p:active {
-  color: #1a73e8;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  list-style: none;
-  display: inline-flex;
-}
-
-nav ul a {
-  color: #333333;
-  text-decoration: none;
-  padding: 0px 20px;
-  display: block;
-  height: 50px;
-  line-height: 50px;
-}
-
-nav ul a:hover {
-  background: rgba(13, 139, 242, 0.2);
-  color: rgb(13, 139, 242);
-  border-radius: 5px;
-}
-
 .main-head {
   width: 100%;
   padding: 30px 10px;
@@ -93,6 +34,7 @@ nav ul a:hover {
   height: 60%;
   width: 50%;
 }
+
 
 .photo1 img {
   width: 100%;
@@ -138,6 +80,10 @@ nav ul a:hover {
 
 .invest a:active {
   box-shadow: 0px 0px 0px 1px #1a73e8;
+}
+
+.invest a:hover {
+  background: #2b9cf2;
 }
 
 .earth-surface {
@@ -327,16 +273,134 @@ nav ul a:hover {
   margin: 0px 10px;
 }
 
+/* ----------------------Aboutus-------- */
+
+#Aboutus {
+  margin-bottom: 30px;
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+}
+
+#Aboutus img {
+  float: left;
+  width: 40%;
+}
+
+#Aboutus h1 {
+  font-size: 40px;
+  color: rgba(68, 189, 50, 0.9);
+  margin-bottom: 20px;
+  clear: both;
+}
+
+#Aboutus p {
+  color: #727272;
+  font-size: 20px;
+}
+
+/* --------------------contactus---------- */
 
 
+/* ------------------donate------------------ */
+
+.donte {
+  position: relative;
+  top: 50px;
+}
+
+.donate_header {
+  color: #5b5b5b;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.donar {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.AccountNo {
+  height: 500px;
+  width: 700px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px 3px #eee;
+}
+
+.donr1 {
+  margin-top: 15px;
+
+}
+
+.hdfc {
+  width: 150px;
+}
+
+table {
+  font-size: 30px;
+}
+
+table td {
+  padding: 10px;
+}
 
 
+.accountQr {
+  height: 500px;
+  width: 700px;
+  border: 1px solid #eee;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px 3px #eee;
+}
+
+.accountQr img {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
 
 
+/* ---------------mission----------- */
 
+#mission {
+  position: relative;
+  top: 80px;
+  padding: 0px 20px;
+}
 
+#mission h1 {
+  font-size: 40px;
+  color: rgba(68, 189, 50, 0.9);
+}
 
+.treetwo {
+  height: 40%;
+  width: 40%;
+  background-color: #b8dbb9;
+}
 
+.treetwo img {
+  width: 100%;
+}
+
+.mission_inner {
+  margin-top: 30px;
+}
+
+.mission_inner p{
+  font-size: 20px;
+  color: #727272;
+}
 
 
 @media screen and (max-width:1400px) {
@@ -354,9 +418,68 @@ nav ul a:hover {
   }
 }
 
+@media screen and (max-width:1475px) {
+  .accountQr {
+    width: 600px;
+  }
+
+  .AccountNo {
+    width: 600px;
+    padding: 20px 30px;
+  }
+
+  .accountQr img {
+    width: 45%;
+  }
+
+  table {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:1275px) {
+  .accountQr {
+    width: 500px;
+  }
+
+  .AccountNo {
+    width: 500px;
+  }
+
+  .accountQr img {
+    width: 55%;
+  }
+
+  p{
+    font-size: 45px;
+  }
+}
+
 @media screen and (max-width:1200px) {
   .head-para b {
     font-size: 43px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .accountQr {
+    width: 400px;
+  }
+
+  .AccountNo {
+    width: 400px;
+  }
+
+  .accountQr img {
+    width: 65%;
+  }
+
+  table {
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 40px;
   }
 }
 
@@ -396,9 +519,32 @@ nav ul a:hover {
     font-size: 35px;
   }
 
-  header {
-    padding: 0px 20px;
+}
+
+@media screen and (max-width:900px) {
+  .accountQr {
+    width: 300px;
+    height: 400px;
   }
+
+  .AccountNo {
+    width: 300px;
+    height: 400px;
+    padding: 15px 20px;
+  }
+
+  .accountQr img {
+    width: 69%;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 35px;
+  }
+
 }
 
 @media screen and (max-width:750px) {
@@ -426,44 +572,33 @@ nav ul a:hover {
   }
 }
 
+@media screen and (max-width:670px) {
+  .accountQr {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+  }
+
+  .accountQr img {
+    width: 60%;
+  }
+
+  table {
+    font-size: 17px;
+  }
+
+  table td {
+    padding: 8px;
+  }
+}
+
 @media screen and (max-width:650px) {
-
-  header {
-    padding: 0px 10px;
-  }
-
-  .bar-btn {
-    display: block;
-  }
-
-  .topdown {
-    right: 0px;
-  }
-
-  nav {
-    position: absolute;
-    top: 51px;
-    right: -700px;
-    height: 100vh;
-    transition: 1s;
-  }
-
-  nav ul {
-    background: rgba(255, 255, 255, 0.9);
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-
-  }
-
-  nav ul li {
-    border-bottom: 1px solid #999999;
-  }
-
-  nav ul a {
-    color: #444444;
-  }
 
   .main-head {
     display: block;
@@ -547,5 +682,65 @@ nav ul a:hover {
 
   .invest a {
     padding: 15px 27px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .accountQr {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AccountNo {
+    width: 300px;
+    height: 300px;
+    padding: 5px 20px;
+    margin-bottom: 40px;
+  }
+
+  .accountQr img {
+    width: 60%;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  table td {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .head h1 {
+    font-size: 19px;
+  }
+
+  .main-con {
+    top: 60px;
+    padding: 9px;
+  }
+
+  .Office, .communicate {
+    padding: 5px;
+    margin: 15px 0px;
+    font-size: 12px;
+  }
+
+  .Office h2, .communicate h2 {
+    font-size: 18px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    padding: 10px 0px;
+    font-size: 12px;
   }
 }
