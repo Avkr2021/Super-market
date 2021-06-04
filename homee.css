@@ -9,6 +9,65 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  width: 100%;
+  padding: 0px 30px;
+  z-index: 99;
+  border-bottom: 2px solid #eee;
+  position: fixed;
+  background: #ffff;
+  box-sizing: border-box;
+}
+
+#logo {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+
+.bar-btn {
+  float: right;
+  transform: rotate(90deg);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  text-align: center;
+  display: none;
+}
+
+.bar-btn p {
+  cursor: pointer;
+  font-size: 21px;
+}
+
+.bar-btn p:active {
+  color: #1a73e8;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+nav ul a {
+  color: #333333;
+  text-decoration: none;
+  padding: 0px 20px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+nav ul a:hover {
+  background: rgba(13, 139, 242, 0.2);
+  color: rgb(13, 139, 242);
+  border-radius: 5px;
+}
+
 .main-head {
   width: 100%;
   padding: 30px 10px;
@@ -46,7 +105,7 @@ html {
 }
 
 .invest {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 10px;
@@ -277,11 +336,9 @@ html {
 
 #Aboutus {
   margin-bottom: 30px;
-  border: 2px solid #eee;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 20px;
   position: relative;
-  top: 50px;
+  top: 10px;
 }
 
 #Aboutus img {
@@ -302,14 +359,51 @@ html {
 }
 
 /* --------------------contactus---------- */
+  .main-con {
+    margin-bottom: 30px;
+    padding: 0px 20px;
+    position: relative;
+    top: 10px;
+  }
 
+  .main-con p{
+    font-size: 18px;
+    color: #727272;
+  }
+
+  .head h1 {
+    font-size: 40px;
+    color: #353535;
+    margin-bottom: 30px;
+  }
+
+  .Office, .communicate {
+    margin-bottom: 30px;
+  }
+
+  .Office h2 {
+    font-size: 30px;
+    color: #353535;
+    margin-bottom: 20px;
+  }
+
+  .communicate h2 {
+    font-size: 30px;
+    color: #353535;
+    margin-bottom: 20px;
+  }
+
+  table td {
+    font-size: 18px;
+  }
+
+  .gmap {
+    width: 500px;
+    height: 400px;
+  }
 
 /* ------------------donate------------------ */
 
-.donte {
-  position: relative;
-  top: 50px;
-}
 
 .donate_header {
   color: #5b5b5b;
@@ -371,10 +465,9 @@ table td {
 
 
 /* ---------------mission----------- */
-
 #mission {
   position: relative;
-  top: 80px;
+  top: 10px;
   padding: 0px 20px;
 }
 
@@ -453,6 +546,11 @@ table td {
   p{
     font-size: 45px;
   }
+
+  .gmap {
+    width: 480px;
+    height: 380px;
+  }
 }
 
 @media screen and (max-width:1200px) {
@@ -484,6 +582,11 @@ table td {
 }
 
 @media screen and (max-width:1000px) {
+
+  header {
+    padding: 0px 20px;
+  }
+
   .head-para b {
     font-size: 35px;
   }
@@ -517,6 +620,11 @@ table td {
 
   .trees-cut p {
     font-size: 35px;
+  }
+
+  .gmap {
+    width: 450px;
+    height: 350px;
   }
 
 }
@@ -570,6 +678,11 @@ table td {
   .invest p {
     font-size: 30px;
   }
+
+  .gmap {
+    width: 410px;
+    height: 310px;
+  }
 }
 
 @media screen and (max-width:670px) {
@@ -596,9 +709,51 @@ table td {
   table td {
     padding: 8px;
   }
+
+  .gmap {
+    width: 320px;
+    height: 220px;
+  }
 }
 
 @media screen and (max-width:650px) {
+
+  header {
+    padding: 0px 10px;
+  }
+
+  .bar-btn {
+    display: block;
+  }
+
+  .topdown {
+    right: 0px;
+  }
+
+  nav {
+    position: absolute;
+    top: 51px;
+    right: -700px;
+    height: 100vh;
+    transition: 1s;
+  }
+
+  nav ul {
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #999999;
+  }
+
+  nav ul a {
+    color: #444444;
+  }
 
   .main-head {
     display: block;
