@@ -683,6 +683,31 @@ table td {
     width: 410px;
     height: 310px;
   }
+  
+  .main-con p{
+    font-size: 15px;
+  }
+
+  .head h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .Office, .communicate {
+    margin-bottom: 20px;
+  }
+
+  .Office h2 {
+    font-size: 35px;
+  }
+
+  .communicate h2 {
+    font-size: 25px;
+  }
+
+  table td {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width:670px) {
