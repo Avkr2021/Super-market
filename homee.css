@@ -32,12 +32,23 @@ header {
   width: 50px;
   display: flex;
   text-align: center;
+  justify-content: center;
   display: none;
+  padding: 8px;
+}
+
+.bar-btn-inner {
+  border: 2px solid #eee;
+  border-radius: 3px;
+  display: flex;
 }
 
 .bar-btn p {
   cursor: pointer;
   font-size: 21px;
+  margin: auto;
+  padding: 4px 4px 7px 4px;
+  color: #686868;
 }
 
 .bar-btn p:active {
@@ -102,6 +113,23 @@ nav ul a:hover {
 
 .container {
     padding: 0px 20px;
+}
+
+.return_to_nature {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.return_to_nature img {
+  width: 25%;
+  margin: 0px 20px;
+  float: left;
+}
+
+.return_to_nature b{
+  font-size: 40px;
+  color: #999999;
 }
 
 .invest {
@@ -191,7 +219,9 @@ nav ul a:hover {
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 30px;
+  margin-top: 50px;
   display: flex;
+  clear: both;
 }
 
 .trees-cut img {
@@ -213,6 +243,7 @@ nav ul a:hover {
 .trees-cut span {
   font-size: 12px;
   display: block;
+  color: #606060;
 }
 
 .globalwarming {
@@ -411,6 +442,27 @@ nav ul a:hover {
   text-align: center;
   padding: 20px;
   border-bottom: 2px solid #d6d6d6;
+  display: flex;
+  justify-content:space-between;
+}
+
+.item1 {
+}
+
+.item2 {
+display: flex;
+}
+
+.item2 a {
+  text-decoration: none;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px 10px 2px 10px;
+  background: #1a73e8;
+  color: #fff;
+  cursor: pointer;
+  font-size: 28px;
+  margin: auto;
 }
 
 .donar {
@@ -683,7 +735,7 @@ table td {
     width: 410px;
     height: 310px;
   }
-  
+
   .main-con p{
     font-size: 15px;
   }
@@ -773,7 +825,7 @@ table td {
   }
 
   nav ul li {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #898989;
   }
 
   nav ul a {
@@ -830,7 +882,7 @@ table td {
   }
 
   .life, .air, .ice, .warm, .fire {
-    width: 80%;
+    width: 70%;
   }
 
 @media screen and (max-width:450px) {
