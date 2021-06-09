@@ -296,7 +296,7 @@ nav ul a:hover {
 }
 
 #footer {
-  background: rgba(68, 189, 50, 0.9);
+  background: rgba(68, 170, 50, 0.9);
   color: #515151;
   padding: 35px 20px;
 }
@@ -351,6 +351,9 @@ nav ul a:hover {
 
 .social-link {
   text-align: center;
+  background: #fff;
+  border-top: 2px solid #eee;
+  padding: 5px;
 }
 
 .social-link a {
@@ -359,7 +362,7 @@ nav ul a:hover {
 }
 
 .social-link img {
-  width: 50px;
+  width: 40px;
   margin: 0px 10px;
 }
 
@@ -799,6 +802,11 @@ table td {
   .gmap {
     width: 320px;
     height: 220px;
+  }
+
+  .social-link img {
+    width: 35px;
+    margin: 0px 10px;
   }
 }
 
