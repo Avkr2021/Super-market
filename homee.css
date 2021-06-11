@@ -366,6 +366,136 @@ nav ul a:hover {
   margin: 0px 10px;
 }
 
+/* ------------------testimonal---------- */
+
+
+.main_content_area {
+width: 100%;
+height: 60vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.main_content_area h1{
+font-size: 30px;
+position: relative;
+margin-bottom: 40px;
+color: #727272;
+}
+
+.main_content_area h1::after {
+content: "";
+width: 150px;
+height: 3px;
+background: tomato;
+position: absolute;
+bottom: -20px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.review-box{
+width: 90%;
+max-width: 700px;
+height: 340px;
+border-radius: 10px;
+box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+position: relative;
+overflow: hidden;
+}
+
+.card {
+height: 300px;
+padding: 40px;
+color: #383838;
+line-height: 22px;
+box-sizing: border-box;
+background: #ffff;
+/* position: relative; */
+z-index: 1;
+}
+
+.card p {
+  font-size: 18px;
+  color: #686868;
+}
+
+.profile {
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.profile img {
+width: 70px;
+height: 70px;
+border-radius: 50%;
+margin-right: 20px;
+}
+
+.profile h3 {
+font-size: 26px;
+color: #f44336;
+margin-bottom: 8px;
+}
+
+#slide {
+width: 100%;
+padding-right: 60px;
+box-sizing: border-box;
+position: absolute;
+top: 0px;
+left: 0px;
+transition: 0.5s;
+}
+
+.sidebar {
+width: 60px;
+height: 100%;
+padding: 15px 0px;
+box-sizing: border-box;
+background: #f44336;
+position: absolute;
+right: 0px;
+top: 0px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.sidebar img {
+width: 40px;
+height: 40px;
+padding: 10px;
+background: #db2929;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.sidebar #up {
+transform: rotate(90deg);
+}
+
+.sidebar #down {
+transform: rotate(-90deg);
+}
+
+.card::before {
+content: "";
+width: 110px;
+height: 110px;
+border-bottom-right-radius: 100%;
+background: #f44336;
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: -1;
+}
+
 /* ----------------------Aboutus-------- */
 
 #Aboutus {
@@ -645,7 +775,7 @@ table td {
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1050px) {
 
   header {
     padding: 0px 20px;
@@ -689,6 +819,47 @@ table td {
   .gmap {
     width: 450px;
     height: 350px;
+  }
+
+  /* ------------------testimonal---------- */
+
+
+  .main_content_area {
+  height: 50vh;
+  margin: 0px 0px 20px 0px;
+  }
+
+  .main_content_area h1{
+  font-size: 50px;
+  }
+
+  .main_content_area h1::after {
+  width: 200px;
+  }
+
+  .review-box{
+  width: 100%;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  .profile {
+  margin-bottom: 40px;
+  }
+
+  .profile img {
+  width: 90px;
+  height: 90px;
+  }
+
+  .profile h3 {
+  font-size: 28px;
+  }
+
+  .card::before {
+    display: none;
   }
 
 }
@@ -735,6 +906,7 @@ table td {
     height: 250px;
   }
 
+
   .trees-cut p {
     font-size: 28px;
   }
@@ -772,7 +944,54 @@ table td {
   table td {
     font-size: 15px;
   }
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+  height: 70vh;
+  }
+
+  .main_content_area h1{
+  margin-bottom: 60px;
+  }
+
+  .review-box{
+  width: 90%;
+  }
+
+  .card {
+  max-height: 300px;
+  padding: 40px 40px;
+  }
+
+  .card::before {
+    display: none;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .profile {
+  margin-bottom: 20px;
+  }
+
+  .profile h3 {
+  font-size: 22px;
+  }
+
+  .sidebar {
+  width: 50px;
+  }
+
+  .sidebar img {
+  width: 35px;
+  height: 35px;
+ }
+
 }
+
+
 
 @media screen and (max-width:670px) {
   .accountQr {
@@ -808,6 +1027,48 @@ table td {
     width: 35px;
     margin: 0px 10px;
   }
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+  height: 90vh;
+  }
+
+  .main_content_area h1{
+  margin-bottom: 50px;
+  font-size: 35px;
+  }
+
+  .main_content_area h1::after {
+    width: 150px;
+  }
+
+  .review-box{
+  width: 90%;
+  padding-right: 40px;
+  }
+
+  .profile {
+  margin-bottom: 20px;
+  }
+
+  .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile h3 {
+  font-size: 20px;
+  }
+
+  .sidebar {
+  width: 50px;
+  }
+
+  .sidebar img {
+  width: 35px;
+  height: 35px;
+ }
 }
 
 @media screen and (max-width:650px) {
@@ -902,7 +1163,7 @@ table td {
     width: 70%;
   }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:485px) {
 
   .globalwarming {
     padding: 23px 10px;
@@ -932,9 +1193,42 @@ table td {
   .invest a {
     padding: 15px 27px;
   }
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+    height: 50vh;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .review-box{
+  width: 98%;
+  padding-right: 40px;
+  }
+
+  .profile {
+  margin: 25px 0px 50px 0px;
+  }
+
+  .profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile h3 {
+  font-size: 22px;
+  }
+
+ .card {
+ max-height: 300px;
+ padding: 15px 25px;
+ }
+
+
+
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:420px) {
   .accountQr {
     width: 300px;
     height: 300px;
@@ -958,10 +1252,93 @@ table td {
   table td {
     padding: 5px;
   }
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+    height: 50vh;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .review-box{
+  width: 98%;
+  padding-right: 40px;
+  }
+
+  .profile {
+  margin: 8px 0px 20px 0px;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile h3 {
+  font-size: 21px;
+  }
+
+ .card {
+ max-height: 300px;
+ padding: 15px 25px;
+ }
+
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 390px) {
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+  height: 55vh;
+  }
+
+  .main_content_area h1{
+  margin-bottom: 60px;
+  }
+
+  .review-box{
+  width: 90%;
+  }
+
+  .card {
+  max-height: 400px;
+  padding: 15px 10px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .profile {
+  margin-bottom: 10px;
+  }
+
+  .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile h3 {
+  font-size: 18px;
+  }
+
+  .sidebar {
+  width: 40px;
+  }
+
+  .sidebar img {
+  width: 30px;
+  height: 30px;
+ }
+
+ #slide {
+ padding-right: 33px;
+ }
+}
+
+@media screen and (max-width: 380px) {
   header {
+    padding: 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -991,5 +1368,74 @@ table td {
   table td {
     padding: 10px 0px;
     font-size: 12px;
+  }
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+    height: 50vh;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .review-box{
+  width: 98%;
+  padding-right: 40px;
+  }
+
+  .profile {
+  margin: 8px 0px 20px 0px;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile h3 {
+  font-size: 21px;
+  }
+
+ .card {
+ max-height: 300px;
+ padding: 15px 25px;
+ }
+}
+
+@media screen and (max-width: 362px) {
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+    height: 60vh;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .review-box{
+  width: 98%;
+  padding-right: 40px;
+  }
+
+  .profile {
+  margin: 3px 0px 10px 0px;
+  }
+
+  .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile h3 {
+  font-size: 21px;
+  }
+
+ .card {
+ max-height: 300px;
+ padding: 15px 25px;
+ }
+}
+
+@media screen and (max-width: 362px) {
+  header {
+    padding: 0px 10px;
   }
 }
