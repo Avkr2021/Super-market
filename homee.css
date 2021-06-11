@@ -484,6 +484,10 @@ transform: rotate(90deg);
 transform: rotate(-90deg);
 }
 
+.sidebar img:active {
+  background: #00a5f4;
+}
+
 .card::before {
 content: "";
 width: 110px;
