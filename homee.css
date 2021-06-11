@@ -864,7 +864,7 @@ table td {
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:860px) {
   .accountQr {
     width: 300px;
     height: 400px;
@@ -886,6 +886,38 @@ table td {
 
   p{
     font-size: 35px;
+  }
+
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+  height: 90vh;
+  }
+
+  .main_content_area h1{
+  margin-bottom: 60px;
+  font-size: 40px;
+  }
+
+  .card {
+  padding: 30px 40px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .profile {
+    margin: 10px 0px;
+  }
+
+  .profile h3 {
+  font-size: 22px;
+  }
+
+  .profile img {
+    width: 65px;
+    height: 65px;
   }
 
 }
@@ -988,6 +1020,24 @@ table td {
   width: 35px;
   height: 35px;
  }
+
+}
+
+@media screen and (max-width:740px) {
+  /* ----------testimonal--------- */
+
+  .main_content_area {
+  height: 80vh;
+  }
+
+
+  .card {
+  padding: 10px 40px;
+  }
+
+  .profile {
+  margin: 5px 0px 10px 0px;
+  }
 
 }
 
@@ -1162,6 +1212,36 @@ table td {
   .life, .air, .ice, .warm, .fire {
     width: 70%;
   }
+}
+
+@media screen and (max-width:570px){
+  .main_content_area {
+    height:90vh;
+  }
+
+  .profile {
+    margin: 5px 0px;
+  }
+
+  .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile h3 {
+  font-size: 20px;
+  }
+
+  .card {
+    padding-right: 15px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+}
+
 
 @media screen and (max-width:485px) {
 
