@@ -485,7 +485,7 @@ transform: rotate(-90deg);
 }
 
 .sidebar img:active {
-  background: #00a5f4;
+  background: #1b66ca;
 }
 
 .card::before {
