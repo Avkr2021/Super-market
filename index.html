@@ -28,6 +28,10 @@
       </nav>
 
     </header>
+    
+    <div class="totop">
+      <a href="#"><img src="arrow2.png" alt=""></a>
+    </div>
 
     <div class="main-head">
       <div class="head-para">
@@ -258,6 +262,20 @@
           slide.style.top = x + "px";
         }
       }
+      
+      const totop = document.querySelector(".totop");
+
+      window.addEventListener("scroll", to_top);
+
+      function to_top() {
+        if (window.pageYOffset > 500) {
+          totop.classList.add("active");
+        }else {
+          totop.classList.remove("active");
+        }
+      }
+      
+      
     </script>
 
 
