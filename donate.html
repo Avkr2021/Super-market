@@ -50,7 +50,7 @@
 
       <div class="accountQr">
         <div id="QRlayer" class="layer_qr">
-          <div class="inner_layer">
+          <div id="inner_layer">
             <p>Pay with QR Code</p>
           </div>
         </div>
@@ -88,7 +88,7 @@
     </div>
     
     <script>
-      document.getElementById("QRlayer").addEventListener("click", removeqr);
+      document.getElementById("inner_layer").addEventListener("click", removeqr);
 
       function removeqr() {
         document.getElementById("QRlayer").classList.add("remove_qr");
