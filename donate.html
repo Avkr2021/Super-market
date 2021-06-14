@@ -49,7 +49,12 @@
       </div>
 
       <div class="accountQr">
-        <img src="bankqr.jpeg" alt="">
+        <div id="QRlayer" class="layer_qr">
+          <div class="inner_layer">
+            <p>Pay with QR Code</p>
+          </div>
+        </div>
+          <img src="bankqr.jpeg" alt="">
       </div>
 
     </div>
@@ -81,5 +86,14 @@
 
 
     </div>
+    
+    <script>
+      document.getElementById("QRlayer").addEventListener("click", removeqr);
+
+      function removeqr() {
+        document.getElementById("QRlayer").classList.add("remove_qr");
+      }
+    </script>
+    
   </body>
 </html>
