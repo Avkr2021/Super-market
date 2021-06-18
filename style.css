@@ -373,7 +373,6 @@ nav ul a:hover {
 
   .header-top-content {
    color: #fff;
-   border: 5px solid yellow;
    width: 100%;
    height: 50%;
    display: flex;
@@ -384,7 +383,6 @@ nav ul a:hover {
   .content-div {
    width: 200px;
    padding: 20px;
-   border: 2px solid red;
   }
 
   .content-div h1 {
