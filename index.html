@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Testing Website</title>
   </head>
-  <body onscroll="slide()">
+  <body>
 
     <header id="head" class="header">
       <div class="logo">
@@ -33,7 +33,7 @@
       </nav>
     </header>
 
-    <!-- ------------------Front view---------------------- -->
+    <!-- r................................Front view -->
 
 
     <div class="header-top">
@@ -49,7 +49,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
           <div class="content-div-inner">
-            <input type="search" name="" value="" placeholder="Write to Search"><a href="#">Search</a>
+            <input type="search" name="" value="" placeholder="Write to Search"><button class="search" type="button" name="">Search</button>
           </div>
         </div>
       </div>
@@ -273,13 +273,36 @@
 
           // this is for header color change on scroll
 
-        window.addEventListener("scroll", changecolor);
 
-        function changecolor() {
-          let header = document.querySelector("header");
 
-          header.classList.toggle("slideToWhite", window.scrollY > 0);
-        }
+        // To get window width
+
+          var screenWidth = window.innerWidth;
+
+          if (screenWidth >= "800" ) {
+
+            window.addEventListener("scroll", changecolor);
+
+            function changecolor() {
+              let header = document.querySelector("header");
+
+              header.classList.toggle("slideToWhite", window.scrollY > 0);
+            }
+          }
+
+          // if (screenWidth <= "799" ) {
+          //
+          //   window.addEventListener("scroll", changecolo);
+          //
+          //   function changecolo() {
+          //     let heade = document.querySelector(header);
+          //
+          //     heade.classList.toggle("slideToWhite", window.scrollY > 1000);
+          //   }
+          // }
+
+
+
 
       </script>
 
