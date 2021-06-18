@@ -2,9 +2,11 @@
   margin: 0px;
   padding: 0px;
   font-family: arial;
+  transition: 0.5s;
+  box-sizing: border-box;
 }
 
-.header {
+header {
 width: 100%;
 padding: 10px 30px;
 z-index: 99;
@@ -12,6 +14,7 @@ border-bottom: 2px solid #eee;
 position: fixed;
 box-sizing: border-box;
 border: none;
+border: 5px solid red;
 }
 
 .slideToWhite {
@@ -95,6 +98,9 @@ nav ul a:hover {
  display: flex;
  background-image:url(headermob.png);
  background-repeat: no-repeat;
+ border: 5px solid blue;
+ margin: 0px;
+ padding: 0px;
 }
 
 .header-top-img {
@@ -102,21 +108,18 @@ nav ul a:hover {
  height: auto;
 }
 
-.header-top-img img {
- width: 100%;
- height: 100%;
-}
-
 .header-top-content {
+ color: #5e5e5e;
+ border: 5px solid yellow;
  display: flex;
  align-items: center;
  justify-content: center;
- flex-wrap: wrap;
 }
 
 .content-div {
- width: 300px;
+ width: 500px;
  padding: 20px;
+ border: 2px solid red;
 }
 
 .content-div h1 {
@@ -125,27 +128,33 @@ nav ul a:hover {
 
 .content-div-inner {
   margin-top: 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 30px;
+  width: 350px;
+  height: 50px;
 }
 
 .content-div-inner input {
   border: none;
   display: inline-block;
-  height: 40px;
-  border-radius: 20px 0px 0px 20px;
-  width: 60%;
-  padding: 5px;
+  height: 100%;
+  border-radius: 30px 0px 0px 30px;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
 }
 
-.content-div-inner a {
+.search {
   background: #387dff;
   color: #ffff;
-  padding: 0px 20px;
-  text-decoration: none;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  width: 20%;
-  border-radius: 0px 20px 20px 0px;
+  height: 100%;
+  border-radius: 30px;
+  padding: 0px 30px;
+  right: 0px;
+  position: absolute;
+  border: 0px;
 
 }
 
@@ -163,7 +172,7 @@ nav ul a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 30px 60px;
-  color: #5e5e5e;
+  color: #c4c4c4;
   margin: 30px 0px;
 }
 
@@ -226,7 +235,6 @@ nav ul a:hover {
 
 .list_items {
   display: flex;
-  flex-wrap: wrap;
   text-align: center;
   justify-content: space-between;
 }
@@ -328,6 +336,10 @@ nav ul a:hover {
 
 @media screen and (max-width: 1050px) {
 
+  .header {
+    padding: 10px 40px;
+  }
+
   .header-top {
     background-size: cover;
     background-position: bottom;
@@ -339,9 +351,70 @@ nav ul a:hover {
   }
 
   nav ul a {
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
 
+}
+
+@media screen and (max-width: 850px) {
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .header-top {
+   height: 80vh;
+   background-image: linear-gradient(rgba(56, 125, 255,0.5), rgba(56, 125, 255,0.5)), url(headermob.png);
+   background-position: left;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .header-top-img {
+   display: none;
+  }
+
+  .header-top-content {
+   color: #fff;
+   border: 5px solid yellow;
+   width: 100%;
+   height: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .content-div {
+   width: 200px;
+   padding: 20px;
+   border: 2px solid red;
+  }
+
+  .content-div h1 {
+    margin: 30px 0px;
+  }
+
+  .content-div-inner {
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+  }
+
+  .content-div-inner input {
+    border-radius: 8px 0px 0px 8px;
+    width: 75%;
+    font-size: 13px;
+  }
+
+  .search {
+    border-radius: 0px 8px 8px 0px;
+    padding: 0px 10px;
+  }
+
+  .business_content {
+
+    padding: 0px 100px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -377,8 +450,16 @@ nav ul a:hover {
     border-bottom: 1px solid #898989;
   }
 
+  nav ul li a {
+    display: block;
+  }
+
   .topdown {
     right: 0px;
+  }
+
+  .list_items {
+    flex-wrap: wrap;
   }
 }
 
@@ -386,7 +467,6 @@ nav ul a:hover {
 
   .header-top {
    color: #fff;
-   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(headermob.png);
    background-repeat: no-repeat;
   }
 
@@ -448,15 +528,14 @@ nav ul a:hover {
     width: 70px;
   }
 
+
+
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 385px) {
 
-  .header {
-    padding: 3px 0px;
-  }
   .register {
-    margin-left: 5px;
+
     margin-right: 15px;
     height: 0px;
     line-height: 0px;
