@@ -1,0 +1,476 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+.header {
+width: 100%;
+padding: 10px 30px;
+z-index: 99;
+border-bottom: 2px solid #eee;
+position: fixed;
+box-sizing: border-box;
+border: none;
+}
+
+.slideToWhite {
+  background: #fff;
+  transition: 0.5s;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  line-height: 50px;
+  height: 50px;
+  background: lavenderblush;
+  border-radius: 10px;
+}
+
+.logo img {
+  width: 100%;
+
+}
+
+.register {
+  float: right;
+  margin-left: 20px;
+}
+
+.register a {
+  text-decoration: none;
+  color: #5e5e5e;
+  line-height: 50px;
+  height: 50px;
+  background: #387dff;
+  padding: 0px 50px;
+  display: inline-block;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.drop-bar {
+  transform: rotate(90deg);
+  background: #fff;
+  font-size: 20px;
+  display: inline-block;
+  float: right;
+  border: 2px solid #eee;
+  padding: 5px;
+  display: none;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #5e5e5e;
+  line-height: 50px;
+  height: 50px;
+  padding: 0px 20px;
+  display: inline-block;
+}
+
+
+nav ul a:hover {
+  background: rgba(56, 125, 255, 0.2);
+  border-radius: 10px;
+}
+
+
+ /* ---------------header-top------------- */
+
+
+.header-top {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ background-image:url(headermob.png);
+ background-repeat: no-repeat;
+}
+
+.header-top-img {
+ width: 60%;
+ height: auto;
+}
+
+.header-top-img img {
+ width: 100%;
+ height: 100%;
+}
+
+.header-top-content {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.content-div {
+ width: 300px;
+ padding: 20px;
+}
+
+.content-div h1 {
+  margin: 30px 0px;
+}
+
+.content-div-inner {
+  margin-top: 30px;
+}
+
+.content-div-inner input {
+  border: none;
+  display: inline-block;
+  height: 40px;
+  border-radius: 20px 0px 0px 20px;
+  width: 60%;
+  padding: 5px;
+}
+
+.content-div-inner a {
+  background: #387dff;
+  color: #ffff;
+  padding: 0px 20px;
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 20%;
+  border-radius: 0px 20px 20px 0px;
+
+}
+
+
+/* <!-- -company name- --> */
+
+
+.main-container {
+  padding: 0px 150px;
+  color: #5e5e5e;
+}
+
+.copany-names {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 60px;
+  color: #5e5e5e;
+  margin: 30px 0px;
+}
+
+/* <!-- -----------------Signup------- --> */
+
+.visa {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+}
+
+.visa-content {
+  width: 50%;
+  padding: 30px 0px;
+}
+
+.visa-content h3 {
+  margin: 20px 0px;
+  font-size: 30px;
+}
+
+.signup-now {
+  text-decoration: none;
+  color: #5e5e5e;
+  line-height: 50px;
+  height: 50px;
+  background: #387dff;
+  padding: 0px 50px;
+  display: inline-block;
+  border-radius: 30px;
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.visa-image {
+  width: 50%;
+}
+
+.visa-image img {
+  width: 80%;
+  height: 80%;
+}
+
+/* <!-- -----------------business------- --> */
+
+
+.business {
+  margin-top: 50px 0px;
+}
+
+.business_content {
+  text-align: center;
+  padding: 0px 200px;
+  margin: 50px 0px;
+}
+
+.business_content h1 {
+  margin: 30px 0px;
+}
+
+.list_items {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.item1 {
+  margin: 0px 10px;
+}
+
+.mobile-logo img {
+  width: 40%;
+}
+
+/* <!------------------------ footer --> */
+
+.footer-last {
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffff;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.footer-last-list {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffff;
+}
+
+.footer-last ul {
+  list-style: none;
+}
+
+.logos {
+  width: 100px;
+}
+
+.logos img {
+  width: 100%;
+}
+
+
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social-icon div:hover {
+  background: #fff;
+}
+
+.social-icon div img {
+  width: 100%;
+}
+
+/* <!-- ----------------footer --> */
+
+.footer-last-list-first p {
+  font-size: 12px;
+  margin: 20px 0px;
+}
+
+.footer-last-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-last-content {
+  font-size: 15px;
+}
+
+
+
+/* r--------------------responsiv */
+
+@media screen and (max-width: 1135px) {
+
+  .header {
+    padding: 10px 50px;
+  }
+
+  .main-container {
+    padding: 0px 40px;
+  }
+
+  nav ul a {
+    padding: 0px 15px;
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+  .header-top {
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+  }
+
+  .main-container {
+    padding: 0px 40px;
+  }
+
+  nav ul a {
+    padding: 0px 15px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    position: fixed;
+  }
+
+  .register {
+    margin: 0px 40px;
+  }
+
+  .drop-bar {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: -850px;
+    height: 100vh;
+    transition: 1s;
+  }
+
+  nav ul {
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #898989;
+  }
+
+  .topdown {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .header-top {
+   color: #fff;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(headermob.png);
+   background-repeat: no-repeat;
+  }
+
+  .visa {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    flex-direction: column-reverse;
+  }
+
+  .visa_new {
+    flex-direction: column;
+
+  }
+
+  .visa-content {
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  .visa-content h3 {
+    margin: 20px 0px;
+    font-size: 30px;
+  }
+
+  .visa-image {
+    width: 50%;
+  }
+
+  .visa-image img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .copany-names {
+    font-size: 10px;
+  }
+
+  .business {
+    margin-top: 50px 0px;
+  }
+
+  .business_content {
+    padding: 0px 20px;
+  }
+
+  .register {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .register a {
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 25px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+}
+
+@media screen and (max-width: 365px) {
+
+  .header {
+    padding: 3px 0px;
+  }
+  .register {
+    margin-left: 5px;
+    margin-right: 15px;
+    height: 0px;
+    line-height: 0px;
+  }
+
+  .register a {
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 20px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 0px;
+    line-height: 0px;
+  }
+}
