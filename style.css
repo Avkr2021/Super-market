@@ -280,14 +280,10 @@ nav ul a:hover {
 }
 
 .social-icon div {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   padding: 5px;
-}
-
-.social-icon div:hover {
-  background: #fff;
 }
 
 .social-icon div img {
@@ -522,6 +518,20 @@ nav ul a:hover {
     width: 70px;
   }
 
+  .footer-last {
+    padding: 35px;
+  }
+
+  .social-icon div {
+    width: 30px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .social-icon div img {
+    width: 100%;
+    border-radius: 50%;
+  }
 
 
 }
@@ -529,7 +539,6 @@ nav ul a:hover {
 @media screen and (max-width: 385px) {
 
   .register {
-
     margin-right: 15px;
     height: 0px;
     line-height: 0px;
